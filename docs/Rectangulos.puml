@@ -1,0 +1,20 @@
+@startuml
+
+class Funcion {
+  +evaluar(double x) : double
+}
+
+class IntegracionRectangulos {
+  +integrar(Funcion& funcion, double a, double b, int n) : double
+}
+
+class main {
+  +main() : int
+}
+
+Funcion "1"--> "1" IntegracionRectangulos
+
+main "1" --> "varias" Funcion
+main"1" --> "1" IntegracionRectangulos
+
+@enduml

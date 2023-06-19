@@ -1,0 +1,46 @@
+Programa de Cálculo de Integración Newton/Cortes por Rectángulos
+
+Introducción
+
+El programa de cálculo de integración Newton/Cortes por Rectángulos es una herramienta desarrollada en C++ utilizando el entorno de desarrollo Visual Studio Code. Este manual de desarrollador proporciona información detallada sobre el funcionamiento del programa, la estructura del proyecto y cómo trabajar con el código fuente.
+
+
+
+Estructura del Proyecto
+
+
+El proyecto tiene la siguiente estructura de carpetas y archivos:
+
+markdown
+
+- bin/
+  - rectangulos.exe
+- include/
+  - Funcion.hpp
+  - IntegracionRectangulos.hpp
+- src/
+  - main.cpp
+- Makefile
+
+
+
+A continuación, se describe cada carpeta y archivo en el proyecto:
+
+
+bin/: Esta carpeta contiene el archivo ejecutable rectangulos.exe generado después de compilar el proyecto. Puedes ejecutar este archivo para utilizar el programa.
+
+include/: Esta carpeta contiene los archivos de encabezado (.hpp) que definen las clases utilizadas en el programa.
+
+Funcion.hpp: Este archivo define la clase Funcion que representa una función matemática a integrar. En el código proporcionado, la clase contiene un método evaluar() que devuelve el valor de la función evaluada en un punto dado. Modifica este archivo para definir tu propia función.
+
+IntegracionRectangulos.hpp: Este archivo define la clase IntegracionRectangulos que realiza la integración numérica utilizando el método de cortes por rectángulos. 
+La clase contiene un método integrar() que toma como entrada una instancia de la clase Funcion, los límites inferior y superior de integración (a y b respectivamente), y el número de subintervalos (n) en los que se dividirá la integral. 
+Modifica este archivo según tus necesidades.
+
+src/: Esta carpeta contiene el archivo main.cpp que contiene la función principal del programa.
+
+main.cpp: Este archivo contiene la función principal main() que interactúa con el usuario y utiliza las clases Funcion e IntegracionRectangulos para realizar el cálculo de la integral. En este archivo, se solicitan los límites de integración, el número de subintervalos y la precisión deseada al usuario. Luego se realiza la integración y se muestra el resultado. Modifica este archivo según tus necesidades.
+
+Makefile: Este archivo es un archivo de construcción utilizado para compilar y ejecutar el programa de manera más conveniente. Proporciona comandos para compilar el código fuente y ejecutar el programa.
+
+

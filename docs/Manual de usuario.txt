@@ -1,0 +1,26 @@
+Programa de Cálculo de Integración Newton/Cortes por Rectángulos
+
+Compilación y Ejecución
+
+Abre el proyecto en Visual Studio Code o en tu entorno de desarrollo preferido.
+Asegúrate de tener un compilador C++ instalado y configurado correctamente.
+En una terminal, navega hasta el directorio raíz del proyecto.
+
+Para compilar el proyecto, ejecuta el siguiente comando en la terminal: make.
+Si la compilación es exitosa, se generará el archivo ejecutable rectangulos.exe en la carpeta bin/.
+Para ejecutar el programa, ejecuta el siguiente comando en la terminal: make run.
+Sigue las instrucciones proporcionadas por el programa para ingresar los valores necesarios y obtener el resultado de la integración.
+Si deseas limpiar los archivos generados durante la compilación, ejecuta el siguiente comando en la terminal: make clean.
+
+Modificación del Código
+
+Si deseas modificar el código fuente del programa, sigue los pasos a continuación:
+
+Abre el archivo correspondiente en la carpeta include/ o src/ utilizando tu editor de texto o IDE preferido.
+Realiza los cambios necesarios en el archivo. Puedes modificar las funciones existentes, agregar nuevas funciones o clases según tus requisitos.
+Guarda los cambios en el archivo modificado.
+Compila y ejecuta el programa nuevamente según las instrucciones anteriores para probar tus modificaciones.
+Conclusiones
+Este manual de desarrollador ha proporcionado una descripción detallada del programa de cálculo de integración Newton/Cortes por Rectángulos. 
+Se ha cubierto la estructura del proyecto, la función de cada archivo y los pasos para compilar, ejecutar y modificar el programa. Utiliza esta información como referencia mientras trabajas con el programa y personalízalo según tus necesidades. 
+¡Disfruta de la programación y el cálculo de integración!
