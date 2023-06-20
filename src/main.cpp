@@ -3,10 +3,13 @@
 #include <math.h>
 #include <Funcion.hpp>
 #include <IntegracionRectangulos.hpp> 
+#include <argh.h>
 using namespace std;
 
 
 int main() {
+
+    //auto cmdl = argh::parser(argc, argv);
     Funcion funcion;
     IntegracionRectangulos integracion;
 
@@ -24,6 +27,9 @@ int main() {
     cin>>fix;
 
     float resultado = integracion.integrar(funcion, a, b, n);
+
+    //cout << "Exe name is: " << cmdl[0] << '\n';
+    //assert(cmdl[10000].empty()); // out-of-bound index returns empty string
 
     cout << "El resultado de la integracion es: " <<fixed<<setprecision(fix)<< resultado <<endl; //agrega el fix deseado por el usuario
     
